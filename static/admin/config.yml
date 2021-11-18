@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/assets/images
+public_folder: /assets/images
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'gallery'
+    label: 'Gallery'
+    folder: 'content/gallery'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Image', name: 'image', widget: 'image',  multiple: true}
+  - label: "Testimonials"
+    name: "testimonials"
+    widget: "list"
+    folder: 'content/testimonials'
+    format: 'frontmatter'
+    create: true
+    summary: '{{fields.quote}} - {{fields.author.name}}'
+    fields:
+      - {label: Quote, name: quote, widget: string}
+      - label: Author
+        name: author
+        widget: object
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Avatar, name: avatar, widget: image}
