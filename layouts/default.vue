@@ -103,8 +103,8 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Admin Panel',
+          to: '/admin'
         }
       ],
       miniVariant: false,
