@@ -1,4 +1,4 @@
-# JAMstack Setup
+# JAMstack Blog
 
 ---
 
