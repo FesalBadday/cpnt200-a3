@@ -1,4 +1,4 @@
-# Assignment 3 - JAMstack Setup
+# JAMstack Setup
 
 ---
 
