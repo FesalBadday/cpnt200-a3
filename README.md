@@ -4,7 +4,7 @@
 
 **Author :** Fesal Badday
 
-**Repo :** [Github Repo](https://github.com/FesalBadday/cpnt200-a3)
+**Repo :** [Github Repo](https://github.com/FesalBadday/jamstack-blog)
 
 **Site :** [Netlify Page](https://cpnt200-a3.netlify.app)
 
